@@ -1,5 +1,5 @@
 import type { CountryType } from "../../type";
-
+import './country.css'
 export interface CountryProps {
     country: CountryType
 }
@@ -7,7 +7,7 @@ export interface CountryProps {
 const Country = ({ country }: CountryProps) => {
     
     return (
-        <div>
+        <div className="country">
             <h3>{country.name.common}</h3>
         </div>
     )
